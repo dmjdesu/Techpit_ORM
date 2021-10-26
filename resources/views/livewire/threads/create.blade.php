@@ -14,63 +14,15 @@
                     <div class="md:flex md:items-center mb-6">
                         <div class="md:w-1/3">
                             <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                                for="inline-first-name">
-                                名前
+                                for="inline-body">
+                                スレッドタイトル
                             </label>
                         </div>
                         <div class="md:w-2/3">
                             <input
                                 class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                id="inline-first-name" type="text" value="" name="firstname" wire:model="firstname">
+                                id="inline-body" type="text" value="" name="body" wire:model="body">
                                 @error('firstname')
-                                    <span class="block sm:inline text-red-700">{{ $message }}</span>
-                                @enderror
-                        </div>
-                    </div>
-                    <div class="md:flex md:items-center mb-6">
-                        <div class="md:w-1/3">
-                            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                                for="inline-last-name">
-                                苗字
-                            </label>
-                        </div>
-                        <div class="md:w-2/3">
-                            <input
-                                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                id="inline-last-name" type="text" placeholder="" name="lastname" wire:model="lastname">
-                                @error('lastname')
-                                    <span class="block sm:inline text-red-700">{{ $message }}</span>
-                                @enderror
-                        </div>
-                    </div>
-                    <div class="md:flex md:items-center mb-6">
-                        <div class="md:w-1/3">
-                            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                                for="inline-email">
-                                メールアドレス
-                            </label>
-                        </div>
-                        <div class="md:w-2/3">
-                            <input
-                                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                id="inline-email" type="text" placeholder="" name="email" wire:model="email">
-                                @error('email')
-                                    <span class="block sm:inline text-red-700">{{ $message }}</span>
-                                @enderror
-                        </div>
-                    </div>
-                    <div class="md:flex md:items-center mb-6">
-                        <div class="md:w-1/3">
-                            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                                for="inline-phone-number">
-                                電話番号
-                            </label>
-                        </div>
-                        <div class="md:w-2/3">
-                            <input
-                                class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                id="inline-phone-number" type="text" placeholder="" name="phone" wire:model="phone">
-                                @error('phone')
                                     <span class="block sm:inline text-red-700">{{ $message }}</span>
                                 @enderror
                         </div>
